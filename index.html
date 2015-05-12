@@ -12,16 +12,17 @@
 	<div ng-app = "FlashCards">
 		<div class = "flash-card" ng-controller = "FlashCardController">
 			<h1>{{ flashCard.question }}</h1>
-			<ul class = "flash-card-answers">
-				<li class = "flash-card-answer">
-					I mean, yeah.
+			<ul class = "flash-card-answers"> 
+				<li class = "flash-card-answer" ng-repeat = "reply in flashCard.answers">
+					{{reply.text}}
 				</li>
+				<!--
 				<li class = "flash-card-answer">
 					No, it's not.
 				</li>
 				<li class = "flash-card-answer">
 					What's a flash card?
-				</li>
+				</li>-->
 			</ul>
 		</div>
 	</div>
