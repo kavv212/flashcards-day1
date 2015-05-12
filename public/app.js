@@ -8,4 +8,7 @@ app.controller('FlashCardController', function($scope) {
 			{text: 'Some kind of fish, right?', correct: false }
 		]
 	};
+	$scope.answerQuestion = function() {
+		console.log('I was called');
+	};
 });
